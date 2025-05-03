@@ -6,65 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>泉道社 正课视频</title>
   <style>
-    html, body {
+    body {
       margin: 0;
       padding: 0;
       background-color: #000;
       color: #fff;
       font-family: sans-serif;
-    }
-    .top-banner {
-      background: rgba(0, 0, 0, 0.7);
-      padding: 10px;
-      text-align: center;
-      font-size: 14px;
-      color: #ffcc00;
-    }
-    .video-wrapper {
-      position: relative;
-      width: 100%;
-      height: calc(100vh - 80px);
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-    iframe {
-      width: 90%;
-      height: 100%;
-      border: none;
-    }
-    .floating-watermark {
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
-      font-size: 12px;
-      color: rgba(255, 255, 255, 0.3);
-      pointer-events: none;
-      animation: float 10s linear infinite;
-    }
-    @keyframes float {
-      0% { transform: translate(0, 0); }
-      50% { transform: translate(-30px, -30px); }
-      100% { transform: translate(0, 0); }
-    }
-    .bottom-contact {
+      height: 100vh;
       text-align: center;
-      padding: 10px;
-      font-size: 13px;
-      color: #aaa;
+    }
+    .message {
+      padding: 20px;
+    }
+    .message h1 {
+      color: #ffcc00;
+      margin-bottom: 20px;
+    }
+    .link-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #ffcc00;
+      color: #000;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .link-btn:hover {
+      background-color: #ffdd33;
     }
   </style>
 </head>
 <body>
-  <div class="top-banner">
-    本课程为泉道社付费正课内容，仅限本人观看，请勿外传或录屏，违者将追责。
-  </div>
-  <div class="video-wrapper">
-    <iframe src="http://yenan.myDS.me:5000/d/s/13CjKh3mSOgVOkTwXgiN2XMZv9513UiQ/77LFLKYafINt0n8uoHSKvcW9tbYjZxc3-SrPgI5f-Pww" allowfullscreen></iframe>
-    <div class="floating-watermark">泉道社 正课内容 请勿外传</div>
-  </div>
-  <div class="bottom-contact">
-    微信联系购买其他课程：your_wechat_id
+  <div class="message">
+    <h1>泉道社 正课视频</h1>
+    <p>本课程为付费正课内容，仅限本人观看，点击下方按钮前往观看。</p>
+    <p>进入后请填写观看密码：<strong>uyuy</strong></p>
+    <a class="link-btn" href="http://yenan.myDS.me:5000/d/s/13CjKh3mSOgVOkTwXgiN2XMZv9513UiQ/77LFLKYafINt0n8uoHSKvcW9tbYjZxc3-SrPgI5f-Pww" target="_blank">
+      点此进入观看课程
+    </a>
   </div>
 </body>
 </html>
